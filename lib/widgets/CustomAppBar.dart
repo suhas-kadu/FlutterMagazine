@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -16,12 +17,12 @@ class CustomAppBar extends StatelessWidget {
             size: 28.0,
           ),
           Text(
-            "Magazine.",
-            style: Theme.of(context)
-                .textTheme
-                .headline5
-                .copyWith(fontWeight: FontWeight.bold),
-          ),
+            "Magazine",
+            style: GoogleFonts.nunitoSans(
+              fontWeight: FontWeight.bold, 
+              fontSize: 33,
+              letterSpacing: 1.2,
+            ),),
           Icon(
             Icons.search,
             size: 28.0,

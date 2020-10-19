@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_magazine/data.dart';
 import 'package:flutter_magazine/widgets/DetailCard.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomTabBarView extends StatelessWidget {
   @override
@@ -30,6 +31,9 @@ class CustomTabBarView extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Popular",
+                          style: GoogleFonts.notoSans(
+                            letterSpacing: 0.8,
+                          ),
                         ),
                       ),
                     ),
@@ -37,11 +41,14 @@ class CustomTabBarView extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
+                          
                           "Newest",
+                          style: GoogleFonts.notoSans(
+                            letterSpacing: 0.8,
                         ),
                       ),
                     ),
-                  ]),
+              )]),
             ),
           ),
           Expanded(
